@@ -1,0 +1,76 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.search_container {
+  margin: 1em;
+  padding: 0.5em 0 0 0em;
+  font-size: 2em;
+}
+
+.search_text {
+  color: rgb(210, 210, 210);
+}
+.container {
+  margin: auto;
+  margin-left: 5em;
+  padding: 0 0 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.contents_container {
+  margin: 2.5em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+}
+
+.img_card {
+  margin: 1em;
+  object-fit: fill;
+  width: 15em;
+  height: 20em;
+  text-align: center;
+  transition: all 200ms ease-in;
+  border-radius: 0.3em;
+}
+
+.img_card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: 700;
+  width: 14em;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.like {
+  margin-top: 0.3em;
+}
+
+@media screen and (max-width: 1150px) {
+  .img_card {
+    margin-top: 4em;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .container {
+    margin: 5em 0;
+  }
+  .contents_container {
+    margin: 0em 6.4em;
+  }
+}

@@ -1,0 +1,394 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #79614a;
+  margin-top: 5em;
+}
+
+#firstSelect {
+  margin: 1em 1.5em;
+  padding-left: 0.6em;
+  width: 17em;
+  height: 2em;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 0.3em;
+  background-color: #c4b09a;
+  color: #5c5c5c;
+  border: none;
+}
+
+#secondSelect {
+  margin-right: 1.5em;
+  padding-left: 0.6em;
+  width: 8em;
+  height: 2em;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 0.3em;
+  background-color: #c4b09a;
+  color: #5c5c5c;
+  border: none;
+}
+
+#thirdSelect {
+  padding-left: 0.6em;
+  width: 8em;
+  height: 2em;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 0.3em;
+  border: none;
+  background-color: #c4b09a;
+  color: #5c5c5c;
+}
+
+.select {
+  display: none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+.search_input {
+  position: absolute;
+  margin-top: 1em;
+  right: 2em;
+  padding-left: 1.5em;
+  width: 35em;
+  height: 3em;
+  border-radius: 2em;
+  font-size: 1em;
+  background-color: #c4b09a;
+  border: none;
+}
+
+.search_btn {
+  position: absolute;
+  margin-top: 1.05em;
+  right: 2.5em;
+  border: none;
+  background-color: transparent;
+  color: #5c5c5c;
+  font-size: 1.3em;
+  width: 0;
+}
+
+.subtitle {
+  margin: 2.5em 0 1em 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: rgb(211, 210, 209);
+}
+
+.select_1_All_container {
+  padding-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contents {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #2e2d2d;
+  border-radius: 0.3em;
+  justify-content: space-around;
+}
+
+.contents_part_text {
+  margin-left: 1em;
+}
+.contents_part {
+  position: relative;
+  padding: 0.8em;
+  margin: 1.6em;
+  font-size: 1.2em;
+  font-weight: 700;
+  background-color: #2e2d2d;
+  border: 0.1em solid rgb(179, 179, 179);
+  border-radius: 0.3em;
+  color: #dbd9d6;
+  display: flex;
+  flex-direction: column;
+}
+
+.contents_part_2 {
+  position: relative;
+  padding: 0.8em;
+  margin: 1.6em;
+  font-size: 1.2em;
+  font-weight: 700;
+  background-color: #2e2d2d;
+  border: 0.1em solid rgb(179, 179, 179);
+  border-radius: 0.3em;
+  color: #dbd9d6;
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle_sound {
+  margin: 1em 5em 1em 1em;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.comingsoon {
+  font-size: 20em;
+  z-index: 1;
+}
+
+.topBtnContainer {
+  position: relative;
+}
+
+.topbutton {
+  position: fixed;
+  top: 90%;
+  right: 3em;
+  width: 5em;
+  height: 5em;
+  background-color: #dbd9d6;
+  border-radius: 100%;
+  border: none;
+  letter-spacing: -0.06em;
+  box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in;
+  z-index: 996;
+}
+.topbutton:hover {
+  color: black;
+}
+
+.triangle {
+  position: fixed;
+  top: 89.5%;
+  right: 1.1em;
+  font-size: 3.5em;
+  z-index: 997;
+}
+
+.triangle:hover {
+  color: aliceblue;
+}
+
+.deleteBtn {
+  display: none;
+}
+
+@media screen and (max-width: 1720px) {
+  .select_1_All_container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .select_1_All_container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .search_input {
+    margin: 1.5em;
+    left: 0;
+    top: 8em;
+    width: 22em;
+    height: 2.5em;
+  }
+  .search_btn {
+    left: 18.5em;
+    top: 7.9em;
+    font-size: 1.1em;
+    width: 0;
+  }
+  .contents_part_2 {
+    margin-top: 3em;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .image {
+    margin-top: 10em;
+  }
+  #firstSelect {
+    font-size: 1em;
+  }
+  #secondSelect {
+    font-size: 1em;
+  }
+  #thirdSelect {
+    font-size: 1em;
+  }
+  .search_input {
+    margin: 1.5em;
+    left: 0;
+    top: 8em;
+    width: 22em;
+    height: 2.5em;
+  }
+  .search_btn {
+    /* left: 18.5em; */
+    left: 18.5em;
+    top: 7.9em;
+    font-size: 1.1em;
+    width: 0;
+  }
+  .select_1_All_container {
+    margin-top: 6em;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .select_1_All_container {
+    width: 100%;
+  }
+  .topbutton {
+    top: 85%;
+    right: 1em;
+  }
+  .triangle {
+    top: 84.5%;
+    right: 0.5em;
+  }
+}
+@media screen and (max-width: 920px) {
+  .contents {
+    width: 100%;
+  }
+  #firstSelect {
+    font-size: 1em;
+  }
+  #secondSelect {
+    font-size: 1em;
+    margin-left: 1.5em;
+  }
+  #thirdSelect {
+    margin-left: 1.5;
+  }
+
+  .select_1_All_container {
+    margin-top: 6em;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .search_input {
+    margin: 1.5em;
+    left: 0;
+    top: 8em;
+    width: 22em;
+    height: 2.5em;
+  }
+  .search_btn {
+    /* left: 18.5em; */
+    top: 7.9em;
+    font-size: 1.1em;
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .container {
+    margin-top: 4.2em;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .container {
+    width: 100%;
+  }
+  #firstSelect {
+    font-size: 1em;
+  }
+  #secondSelect {
+    font-size: 1em;
+    margin-left: 1.5em;
+  }
+  #thirdSelect {
+    margin-left: 1.5em;
+  }
+  .search_input {
+    margin: 1.5em;
+    left: 0;
+    top: 10.5em;
+    width: 22em;
+    height: 2.5em;
+  }
+  .search_btn {
+    /* left: 18.5em; */
+    top: 10.15em;
+    font-size: 1.1em;
+    width: 0;
+  }
+  .select_1_All_container {
+    margin-top: 6em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .search_input {
+    width: 20em;
+  }
+  .search_btn {
+    left: 17em;
+    width: 0;
+  }
+  .contents {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .contents_part_2 {
+    margin: 0 0 1em 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .contents_part {
+    padding: 1em 0;
+  }
+  .contents_part_2_text {
+    margin-top: 1em;
+  }
+  .subtitle {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #thirdSelect {
+    margin-top: 1em;
+  }
+  .search_input {
+    width: 17em;
+    margin-top: 4em;
+  }
+  .search_btn {
+    top: 12.5em;
+    left: 14em;
+    width: 0;
+  }
+  .contents_part_2 {
+    margin-top: 3em;
+  }
+}

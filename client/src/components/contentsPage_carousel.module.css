@@ -1,0 +1,66 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 1em;
+  width: 55em;
+}
+
+.contents_container {
+  text-align: center;
+  width: 42em;
+  height: 9em;
+}
+
+.img_card {
+  object-fit: cover;
+  margin: auto;
+  padding: 0.5em;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  transition: all 200ms ease-in;
+}
+
+.img_card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.title {
+  display: -webkit-box;
+  font-size: 0.8em;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.like {
+  font-size: 0.7em;
+}
+
+@media screen and (max-width: 2500px) {
+  .container {
+    width: 38em;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .container {
+    margin: 0 1em;
+    width: 18em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0;
+    width: 14em;
+  }
+  .img_card {
+  }
+}

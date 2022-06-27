@@ -1,0 +1,48 @@
+.commentBox{
+  margin: 0 auto;
+  width: 37rem;
+  padding-bottom: 5rem;
+}
+.commentText{
+  width: 100%;
+  height: 4rem;
+  padding: 0.8rem;
+  resize: none;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 1rem;
+  border: 1px solid black;
+  margin: 0;
+}
+.btnOk{
+  width: 5rem;
+  height: 1.7rem;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  background-color: white;
+  float: right;
+  margin-top: 0.2rem;
+}
+.btnOk:hover{
+  background-color: black;
+  color: white;
+}
+
+@media screen and  (max-width:767px) {
+.commentBox{
+  margin: 0 auto;
+  width: 18rem;
+  padding-bottom: 5rem;
+}
+.commentText{
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+.btnOk{
+  width: 3.5rem;
+  height: 1.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.6rem;
+}
+}

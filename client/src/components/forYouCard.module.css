@@ -1,0 +1,142 @@
+.container{
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-right: 4rem;
+  width: 25rem;
+  background-color:white;
+  -webkit-box-shadow: 1px 8px 5px 3px rgba(0,0,0,0.15); 
+  box-shadow: 1px 8px 5px 3px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+.container:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+.img {
+  width:100%;
+  height:10rem;
+  margin:0;
+  overflow: hidden;
+}
+.textbox{
+  text-align: left;
+  margin-left: 1rem;
+  width: 100%;
+}
+.titleBox{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-top: 1rem;
+}
+.title{
+  font-size:1.1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 17rem;
+}
+.iconText{
+  font-size:0.7rem;
+  margin-top: 0.4rem;
+}
+.writer{
+  margin: 0;
+}
+.category{
+  background-color:#B09171;
+  width:16rem;
+  height:1.7rem;
+  padding: 0.3rem 1rem;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.btnUrl, .btnKakao{
+  background-color: white;
+  width: 50%;
+  padding: 0.6rem 0;
+  box-sizing: border-box;
+  border-top: 1px solid rgb(181, 181, 181);
+  border-bottom: 1px solid rgb(181, 181, 181);
+  border-left: none;
+  border-right: none;
+  color: black;
+  font-size: 0.9rem;
+}
+.btnKakao{
+  border-right: none;
+  border-left: 1px solid rgb(181, 181, 181);
+}
+.btnUrl:hover{
+  background-color:#b090714b;
+  color: black;
+  border: 1px solid #b090714b;
+}
+.btnKakao:hover{
+  background-color:#b090714b;
+  border: 1px solid #b090714b;
+}
+
+.like{
+  color:#d62d20;
+    margin-right: 2.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.unlike{
+  color:#cccccc;
+  margin-right: 2.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media screen and  (max-width:1024px) {
+  .container{
+  margin-right: 2rem;
+  width: 22rem;
+  transition: 0;
+}
+.container:hover{
+    transform: translateY(0px);
+}
+.btnUrl:hover{
+  background-color:#b090714b;
+  color: black;
+  border: 1px solid #b090714b;
+}
+.btnKakao:hover{
+  background-color:#b090714b;
+  border: 1px solid #b090714b;
+}
+}
+
+@media screen and  (max-width:740px) {
+.container{
+  width: 17rem;
+}
+.title{
+  font-size:1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 13rem;
+}
+.iconText{
+  font-size:0.6rem;
+  margin-top: 0.4rem;
+}
+.writer{
+  margin: 0;
+  font-size:0.9rem;
+}
+.category{
+  width:15rem;
+  border-radius: 0.3rem;
+}
+}

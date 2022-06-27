@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 53.5vh;
+  background-color: #79614a;
+}
+
+.text {
+  padding: 5em;
+  font-size: 2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 365px) {
+  .text {
+    padding: 5em 0;
+    font-size: 2em;
+    text-align: center;
+  }
+}

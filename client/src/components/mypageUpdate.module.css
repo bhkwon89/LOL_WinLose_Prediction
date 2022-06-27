@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    z-index: 1000;
+    margin: 5em 0 0 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.container {
+    margin: 3em auto;
+    width: 30em;
+    height: 45em;
+    border-radius: 1.5em;
+    background-color: white
+}
+
+.cancelBox {
+    display: none;
+}
+
+.xBtn {
+    display: none;
+    width: 5vw;
+    margin-bottom: 0;
+}
+
+.img {
+    margin: 3em 0 1em 4.9em;
+    border-radius: 1em;
+    width: 21em; 
+    height: 15em;
+}
+
+.imgFile {
+    display: none;
+}
+
+.imgUpdate {
+    display: block;
+    margin-left: 10em;
+    width: 7em;
+    height: 2.2em;
+    font-size: large;
+    color: white;
+    background-color: #B09171;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.itemText {
+    margin: 1em 0.5em 0.4em 2.5em;
+    display: block;
+    float: left;
+    font-size: 150%;
+    font-weight: 500;
+    color: black;
+    background-color: white
+}
+
+.emailText {
+    margin: 1.3em 0.5em 0.5em 14em;
+    display: block;
+    font-size: 110%;
+    font-weight: bold;
+    color: black;
+    background-color: white
+}
+
+.myInfo:focus {
+    outline: none;
+}
+
+.myInfo {
+    margin: 1.3em 3em 0 0.7em;
+    padding-left: 15px;
+    display: block;
+    width: 15em;
+    height: 3.5em;
+    border: 0.2em solid black;
+    border-radius: 0.5em;
+    float: right;
+    background-color: white
+}
+
+.update_bnt {
+    display: block;
+    margin: 0 0em 0 2.8em ;
+    width: 7em;
+    float: left;
+    height: 2.5em;
+    border: none;
+    font-size: 1.4em;
+    font-weight: 500;
+    border-radius: 0.5em;
+    background-color: #B09171;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.message {
+    display:inline-block;
+    font-weight: bold;
+    text-align: center;
+    margin: 1.2em 7em auto;
+    width: 25em;
+    height: 2em;
+    color: red;
+    font-size: 0.8em;
+    background-color: white
+}
+
+.cancel_bnt {
+    display: block;
+    margin: 0 2.5em 0 0 ;
+    float: right;
+    font-size: 1.4em;
+    font-weight: 500;
+    width: 7em;
+    height: 2.5em;
+    border: solid black;
+    border-radius: 0.5em;
+    border-width: 1px;
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .body {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        padding-top: 1.3em;
+        align-items: center;
+    }
+
+    .container {
+        position: absolute;
+        width: 100vw;
+        height: 120vh;
+        border-radius: 0;
+    }
+    .cancelBox {
+        display: block;
+        border: none;
+        float: right;
+        padding-top: 2em;
+        margin-right: 12vw;
+        width: 2vw;
+        background-color: white;
+    }
+
+    .xBtn {
+        display: block;
+    }
+
+    .img {
+        margin: 1vh 0 0 31vw;
+        width: 40vw; 
+        height: 25vh;
+    }
+
+    .imgUpdate {
+        margin: 2vh 0 0 43vw;
+    }
+
+    .emailText {
+        display: block;
+        margin: 3vh 0 4vh 51vw;
+        font-size: xx-large;
+    }
+
+    .itemText {
+        margin: 1.5em 0 0 18vw;
+        padding-bottom: 1em;
+        padding-right: 0;
+        font-size: 180%;
+        width: 25vw;
+    }
+
+    .myInfo {
+        margin: 2em 15vw 2em 1.5vw;
+        padding-left: 15px;
+        width: 35vw;
+        height: 4.2em;
+    }
+
+    .update_bnt {
+        display: inline;
+        float: left;
+        margin: 2vh 3vw 0 19vw;
+        width: 25vw;
+        height: 6vh;
+    }
+
+    .message {
+        padding-bottom: 2vh;
+        margin-left: -9vw;
+        padding-left: 30vw;
+        text-align: center;
+        font-size: large;
+        width: 90vw;
+    }
+
+    .cancel_bnt {
+        width: 25vw;
+        float: right;
+        height: 6vh;
+        float: right;
+        margin: 2vh 20vw 0 0;
+    }
+}
+
+@media screen and (max-width: 711px) {
+    .body {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        padding-top: 1.3em;
+        align-items: center;
+    }
+
+    .container {
+        position: absolute;
+        width: 105vw;
+        height: 120vh;
+        border-radius: 0;
+    }
+    .cancelBox {
+        display: block;
+        border: none;
+        float: right;
+        margin-right: 5em;
+        background-color: white;
+        padding-top: 2vh;
+    }
+
+    .xBtn {
+        display: block;
+    }
+
+    .img {
+        margin-top: 4vh;
+        margin-left: 26vw;
+        width: 50vw; 
+        height: 15vh;
+    }
+
+    .imgUpdate {
+        margin: 0 0 0 44vw;
+        width: 16vw;
+        height: 5vh;
+    }
+
+    .emailText {
+        margin: 2.5em 3vw 1.2em 5vw;
+        padding: 0 0 0 50vw;
+        font-size: 1em;
+    }
+
+    .itemText {
+        display: block;
+        margin: 2.5em 0 0.7em 10vw;
+        padding: 0;
+        font-size: 110%;
+        width: 35vw;
+    }
+
+    .myInfo {
+        margin: 2em 15vw 1em 3vw;
+        padding-left: 15px;
+        width: 35vw;
+        height: 3.5em;
+        border-width: 0.2px;
+    }
+
+    .cancel_bnt {
+        margin-top: 0;
+        width: 30vw;
+        font-size: large;
+    }
+
+    .message {
+        margin: 0;
+        padding-bottom: 2vh;
+        margin-left: 0.1vw;
+        font-size: 3vw;
+        font-weight: 500;
+        padding-left: 15vw;
+    }
+
+    .update_bnt {
+        margin: 0 0 0 16vw;
+        width: 30vw;
+        font-size: large;
+    }
+} 

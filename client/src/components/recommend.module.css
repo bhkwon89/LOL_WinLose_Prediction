@@ -1,0 +1,64 @@
+.container{
+  height: 5rem;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  display:flex;
+  align-items:center;
+}
+.num{
+  width:1rem;
+  margin-left: 1.7rem;
+  margin-right:2rem;
+  font-size:0.9rem;
+}
+.img{
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+  width:4rem;
+  height:4rem;
+}
+.title{
+  margin-right: 2.5rem;
+  width:13.5rem;
+  height:auto;
+  text-align:center;
+}
+.type{
+  margin-right: 4.7rem;
+  font-size:0.9rem;
+}
+.like{
+  font-size:0.9rem;
+
+}
+
+@media screen and  (max-width:740px) {
+.container{
+  height: 5rem;
+  display:flex;
+  align-items:center;
+  justify-content:left;
+}
+.num{
+  margin-left:1rem;
+  margin-right:0.5rem;
+}
+.img{
+  margin-top: 1.2rem;
+  margin-right: 0.7rem;
+  width:2.5rem;
+  height:2.5rem;
+}
+.title{
+  margin-right: 1rem;
+  width:15rem;
+  font-size: 0.8rem;
+}
+.type{
+  margin-right: 1.5rem;
+  font-size:0.8rem;
+}
+.like{
+  font-size:0.8rem;
+  margin-right: 1rem;
+}
+}

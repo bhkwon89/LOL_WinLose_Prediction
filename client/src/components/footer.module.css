@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  background-color: #B09171;
+  height:17rem;
+  padding: 2rem;
+  height: fit-content;
+  line-height: 1.5rem;
+}
+.container {
+  display: flex;
+  margin-right: 1.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  padding-right: 7rem;
+  flex-direction: column;
+  border-right: 1px solid #FAEEE0;
+}
+.icon{
+  width:1.5rem;
+  height:1.5rem;
+}
+.iconWiki{
+  width:1.5rem;
+  height:1.5rem;
+  fill:#FAEEE0;
+}
+a {
+  margin: 0.6rem 0;
+  text-decoration: none;
+  color: black;
+}
+svg {
+  transform: translate(0, 22%);
+  margin-right: 0.5rem;
+}
+img {
+  width: 149px;
+  margin-bottom: 20px;
+}
+.teamContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.individual {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  width: 17rem;
+}
+.link{
+  margin: 0.3rem 0;
+  line-height: 0.5rem;
+}
+.individual > svg{
+  transform: translate(0, 22%);
+  margin-right: 1rem;
+}
+.name {
+  display: flex;
+  height: 3rem;
+}
+.fullname{
+  font-weight: bold;
+  width:3rem;
+}
+.role {
+  width: 5rem;
+  height:1.5rem;
+  margin-left: 0.3rem;
+  background-color: #FAEEE0;
+  border-radius: 0.9rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+@media screen and (max-width:1024px) {
+  .container {
+    margin-right: 1rem;
+    padding-right: 2rem;
+  }
+  .teamContainer{
+    margin-bottom: 4rem;
+  }
+  .individual {
+  padding: 0 2rem;
+}
+.link{
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+}
+
+@media screen and (max-width:740px) {
+  .footer {
+  flex-direction: column;
+}
+  .container {
+    margin-right: 0rem;
+    padding-right: 0rem;
+    border-right: none;
+    border-bottom: 1px solid #FAEEE0;
+    border-top: 1px solid #FAEEE0;
+    padding-top: 2.5rem;
+  }
+  .teamContainer{
+    align-items: center;
+    flex-direction: column;
+  }
+  .individual {
+  padding: 0.3rem;
+  width: 17rem;
+  margin-bottom: 1.5rem;
+}
+.box{
+  justify-content: left;
+  width: 100%;
+}
+.icon{
+  width: 1rem;
+  height: 1rem;
+}
+.link{
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+}

@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalBox {
+    width: 25em;
+    height: 34em;
+    background-color: white;
+    border-radius: 1em;
+    padding: 2em;;
+    margin-bottom: 2em;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1.3em 0 1em 5.2em;
+    color: #B09171;
+}
+
+.text {
+    font-size:1.1em;
+    margin: 3em 0 3em 3em;
+    color: rgb(212, 65, 65);
+}
+
+.textBox {
+    border-width: 1px;
+    border-radius: 0.5em;
+}
+
+.withdrawBtn {
+    width:8em;
+    height: 2.5em;
+    font-size: 1em;
+    color: white;
+    background-color: #B09171;
+    border: 1px #B09171;
+    border-radius: 0.2em;
+    margin: 0.5em 1.5em 1.5em 1.3em;
+}
+
+.closeBtn {
+    width:8em;
+    height: 2.5em;
+    font-size: 1em;
+    color: white;
+    background-color: #B09171;
+    border-radius: 0.2em;
+    margin-left: 1em;
+    border: none;
+}
+
+@media screen and (max-width: 711px) {
+    .modalBox {
+        width: 105vw;
+        height: 75vh;
+        background-color: white;
+        padding: 2em;;
+        margin-bottom: 3.5em;
+        margin-top: 2.5vh;
+        border-radius: 0;
+    }
+
+    .title {
+        margin: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    .text {
+        font-size: 4.3vw;
+        margin: 9vh 0 7vw 12vw;
+    }
+
+    .withdrawBtn {
+        width: 30vw;
+        height: 2.5em;
+        margin: 4vh 0 0 6vw;
+    }
+
+    .closeBtn {
+        width: 30vw;
+        height: 2.5em;
+        margin-left: 8vw;
+    }
+}

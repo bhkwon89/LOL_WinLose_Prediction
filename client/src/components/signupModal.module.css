@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  z-index: 900;
+  margin: 5em 0 0 0;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.container {
+  margin: 3em auto;
+  width: 30em;
+  height: 45em;
+  border-radius: 1.5em;
+  background-color: white
+}
+
+.cancelBox {
+  display: none;
+}
+
+.cancelBtn {
+  display: none;
+}
+
+.img {
+  margin: 2em 0 0 5em;
+  width: 21em; 
+  height: 15em;
+}
+
+.itemText {
+  margin: 0.4em 0.5em 0.5em 2.5em;
+  display: block;
+  float: left;
+  font-size: 150%;
+  font-weight: bold;
+  color: #B09171;
+  background-color: white
+}
+
+.myInfo:focus {
+  outline: none;
+}
+
+
+.myInfo {
+  margin: 0 3em 0.7em 0.7em;
+  padding-left: 15px;
+  display: block;
+  width: 16em;
+  height: 3.5em;
+  border: 0.1em solid #B09171;
+  border-radius: 0.5em;
+  float: right;
+  background-color: white
+}
+
+.membership {
+  display: block;
+  margin: 0.7em auto;
+  margin-top: 12em;
+  width: 18em;
+  height: 2.5em;
+  border: none;
+  outline: none;
+  font-size: 1.4em;
+  font-weight: 900;
+  border-radius: 0.5em;
+  background-color: #B09171;
+  color: rgb(5, 5, 5);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.message {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  margin-top: 1em;
+  font-size: 0.8em;
+  background-color: white
+}
+
+.login_text {
+  margin-left: 5em;
+  font-weight: bold;
+  font-size: 0.9em;
+  background-color: white
+}
+
+.login_bnt {
+  margin: 1.5em 0 0 1.5em;
+  font-size: 1.1em;
+  font-weight: 900;
+  width: 7.5em;
+  height: 2.3em;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+  color: rgb(5, 5, 5);
+  background-color: #B09171;
+}
+
+@media screen and (max-width: 1024px) {
+  .body {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    padding-top: 1.3em;
+    align-items: center;
+  }
+
+  .container {
+    position: absolute;
+    width: 100vw;
+    height: 120vh;
+    border-radius: 0;
+  }
+  .cancelBox {
+    border: none;
+    float: right;
+    margin-right: 7vw;
+    background-color: white;
+  }
+
+  .cancelBtn {
+    display: block;
+    padding-top: 2em;
+    width: 4vw;
+  }
+
+  .img {
+    float: left;
+    margin-top: 0;
+    margin-left: 34vw;
+    width: 40vw; 
+    height: 23vh;
+  }
+
+  .itemText {
+    display: block;
+    margin: 1em 0 1.5em 12vw;
+    font-size: 180%;
+    width: 35vw;
+  }
+
+  .myInfo {
+    margin: 0.5em 10vw 3.7em 3vw;
+    padding-left: 15px;
+    width: 40vw;
+    height: 5.1em;
+  }
+
+  .membership {
+    display: inline;
+    margin: 1vh 10vw 0 10vw;
+    width: 80vw;
+    height: 7vh;
+  }
+
+  .login_text {
+    display: block;
+    margin: 3vh 0 0 10vw;
+    font-size: 3.5vw;
+  }
+
+  .message {
+    padding-bottom: 2vh;
+    margin-left: -1vw;
+    font-size: 2.5vw;
+  }
+
+  .login_bnt {
+    width: 30vw;
+    height: 6vh;
+    float: right;
+    margin: -4.5vh 10vw 0 0;
+  }
+}
+
+@media screen and (max-width: 711px) {
+  .body {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    padding-top: 1.3em;
+    align-items: center;
+  }
+
+  .container {
+    position: absolute;
+    width: 105vw;
+    height: 120vh;
+    border-radius: 0;
+  }
+  .cancelBox {
+    border: none;
+    float: right;
+    margin-right: 2em;
+    background-color: white;
+  }
+
+  .cancelBtn {
+    display: block;
+    padding-top: 2em;
+    width: 4vw;
+  }
+
+  .img {
+    float: left;
+    margin-left: 36vw;
+    width: 35vw; 
+    height: 20vh;
+  }
+
+  .itemText {
+    display: block;
+    margin: 1em 0 3.1vh 11vw;
+    font-size: 120%;
+    width: 40vw;
+  }
+
+  .myInfo {
+    margin: 0.8em 15vw 2em 3vw;
+    padding-left: 15px;
+    width: 35vw;
+    height: 3em;
+    position: relative;
+  }
+
+  .membership {
+    display: block;
+    margin: 65vh 1vw 1em 10vw;
+    width: 80vw;
+    height: 8vh;
+  }
+
+  .login_text {
+    margin: 0 0 0 10vw;
+    font-size: 3vw;
+  }
+
+  .message {
+    padding-bottom: 3vh;
+    margin-left: -7vw;
+  }
+
+  .login_bnt {
+    width: 33vw;
+    height: 5vh;
+    margin: -4vh 15vw 0 5vw;
+  }
+}

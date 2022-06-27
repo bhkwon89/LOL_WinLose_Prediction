@@ -1,0 +1,98 @@
+.container{
+  flex-direction: column;
+	width: 100%;
+	padding: 10vw 0 8vw 0;
+  display: flex;
+  background-color: #b0907146;
+}
+.content{
+  flex-direction: row;
+	width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.countMessage{
+  flex-direction: column;
+	width: 90%;
+	font-family: NanumSquareEB;
+	font-size: 2.5rem;
+	color: #888888;
+  margin-bottom: 5rem;
+}
+.countBox{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-right:4vw;
+  font-weight: bold;
+  margin-bottom:1rem;
+}
+.contentsText{
+  margin-right: 1rem;
+}
+.contentsCounter, .userCounter{
+  font-size: 4.5vw;
+  color: #B09171;
+}
+.text{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.contentsCounter{
+  margin-left:4rem;
+}
+.userCounter{
+  margin: 0 8px;
+}
+@media screen and (max-width:1070px) {
+.container{
+	padding: 14rem 0 20rem 0;
+}
+.countMessage{
+	width: 95%;
+	font-size: 1.5rem;
+  margin-bottom: 6rem;
+}
+.contentsText{
+  margin-right: 0rem;
+}
+.contentsCounter, .userCounter{
+  font-size: 5vw;
+}
+.text{
+  font-size: 1.5rem;
+}
+}
+
+@media screen and (max-width:740px) {
+.container{
+	padding: 20rem 0 20rem 0;
+}
+.countMessage{
+	width: 90%;
+	font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.countBox{
+  flex-direction: column;
+  margin-right:0vw;
+}
+.contentsCounter{
+  margin-left:0rem;
+}
+.contentsCounter, .userCounter{
+  font-size: 1.8rem;
+}
+.contentsText{
+  margin-bottom: 1rem;
+}
+.text{
+  font-size: 1.1rem;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+}

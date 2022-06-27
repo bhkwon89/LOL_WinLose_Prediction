@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: block;
+    margin: 5em 5em 0 18vw;
+    padding: 0.5em 0 0 20vw;
+    width: 60vw;
+    height: 25em;
+    position: absolute;
+}
+
+.reviews_title {
+    display: block;
+    width: 35vw;
+    float: left;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.reviewsMore_button {
+    display: flex;
+    margin-left: 50vw;
+    margin-bottom: 0.3em;
+    width: 5vw;
+    font-size: 1.7em;
+    font-weight: bold;
+    border: solid #B09171;
+    background-color: #B09171;
+}
+
+.more_icon {
+    display: flex; 
+    margin: -0.1em 0 0 0.3em;
+}
+
+.reviewBox {
+    display: flex;
+    margin-right: 2vw;
+    height: 7vh;
+    border-bottom: 2px solid black;
+}
+
+.reviewsBox {
+    margin: 0em 3em 2em 0 ;
+    border: solid black;
+    border-width: 2.5px;
+    padding-left: 2em;
+    width: 55vw;
+    height: 25em;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 12px -4px black;
+}
+
+.likesMore_button {
+    display: flex;
+    margin-left: 50vw;
+    margin-bottom: 0.3em;
+    width: 5vw;
+    font-size: 1.7em;
+    font-weight: bold;
+    border: solid #B09171;
+    background-color: #B09171;
+}
+
+.likesBox {
+    margin: 0em 3em 2em 0 ;
+    border: solid black;
+    border-width: 2.5px;
+    padding-left: 2em;
+    width: 55vw;
+    height: 25em;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 12px -4px black;
+}
+
+.myReviewData {
+    display: block;
+    border: none;
+    text-align: left;
+    width: 46em;
+    margin: 2.5em 4em 0.2em 0.5em;
+    font-size: large;
+    background-color: #B09171;
+}
+
+.mydata_reviewDate {
+    display: block;
+    margin: 1.2em 0.3vw 0 0;
+    padding: 1.1vh 0 0 0;
+    width: 9.5vw;
+    text-align: end;
+    font-size: large;
+    border-width: 2px;
+    border: none;
+    background-color: #B09171;
+}
+
+.likeBox {
+    display: flex;
+    margin: 0.3em 2vw 0 0;
+    font-size: x-large;
+    border-bottom: 2px solid black;
+}
+
+.myLikeData {
+    display: block;
+    border: none;
+    text-align: left;
+    width: 50em;
+    margin: 1.5em 4em 0.5em 0.5em;
+    font-size: large;
+    background-color: #B09171;
+}
+
+.mydata_likeDate {
+    display: block;
+    margin: 1.3em 0 0.5em 0;
+    width: 16em;
+    text-align: end;
+    font-size: large;
+    border-bottom: solid black;
+    border-width: 2px;
+    border: none;
+    background-color: #B09171;
+}
+
+.empty_reviewbox {
+    display: block;
+    padding-top: 6.5em;
+    height: 20em;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.likes_title {
+    display: block;
+    width: 35vw;
+    height: auto;
+    float: left;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.empty_likesbox {
+    display: block;
+    padding-top: 6.5em;
+    height: 20em;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin-top: -20vh;
+        padding: 0;
+    }
+
+    .reviews_title {
+        margin: 60.5vh 0 0 -15vw;
+        width: 50vw;
+        font-size: 5vw;
+    }
+
+    .reviewsMore_button {
+        margin-top: 60vh;
+        padding-left: 13vw;
+        font-size: 5vw;
+    }
+
+    .myReviewData {
+        margin-top: 3.35vh;
+    }
+
+    .reviewBox {
+        width: 90vw;
+    }
+    
+    .reviewsBox {
+        margin: 0 0 0 -18vw;
+        height: 40vh;
+        border-radius: 0;
+        width: 100vw;
+        border-right: none;
+        border-left: none;
+    }
+
+    .mydata_reviewDate {
+        padding-top: 0.4vh;
+        width: 15vw;
+        font-size: 2vw;
+        border-right: none;
+        border-left: none;
+    }
+
+    .likes_title {
+        margin: 3vh 0 0 -15vw;
+        width: 50vw;
+        font-size: 5vw;
+    }
+
+    .likesMore_button {
+        margin-top: 2.25vh;
+        padding-left: 13vw;
+        font-size: 5vw;
+    }
+
+    .likesBox {
+        margin: 0 0 0 -18vw;
+        height: 40vh;
+        border-radius: 0;
+        width: 100vw;
+    }
+
+    .myLikeData {
+        width: 200vw;
+    }
+
+    .empty_reviewbox {
+        padding: 13vh 5vw 0 0;
+        width: 100%;
+        text-align: center;
+        font-size: 6vw;
+    }
+
+    .likeBox {
+        width: 90vw;
+    }
+
+    .mydata_likeDate {
+        width: 70vw;
+    }
+
+    .empty_likesbox {
+        padding: 15vh 5vw 0 0;
+        width: 100%;
+        text-align: center;
+        font-size: 4.8vw;
+    }
+}
+
+@media screen and (max-width: 711px) {
+    .container {
+        margin-top: -20vh;
+        padding: 0;
+    }
+
+    .reviews_title {
+        margin: 60vh 0 0 -15vw;
+        width: 50vw;
+        font-size: 5vw;
+    }
+
+    .reviewsMore_button {
+        margin-top: 60vh;
+        padding-left: 13vw;
+        font-size: 5vw;
+    }
+    
+    .reviewsBox {
+        margin: 0 0 0 -18vw;
+        padding-left: 3.5vw;
+        height: 45vh;
+        border-radius: 0;
+        width: 100vw;
+        border-width: 1px;
+        border-right: none;
+        border-left: none;
+    }
+
+    .likes_title {
+        margin: 2vh 0 0 -15vw;
+        width: 50vw;
+        font-size: 5vw;
+    }
+
+    .likesMore_button {
+        margin-top: 2.25vh;
+        padding-left: 13vw;
+        font-size: 5vw;
+    }
+
+    .likesBox {
+        margin: 0 0 0 -18vw;
+        height: 40vh;
+        border-radius: 0;
+        width: 100vw;
+        border-width: 1px;
+        border-right: none;
+        border-left: none;
+    }
+
+    .likesBox {
+        padding-left: 3.5vw;
+        height: 45vh;
+    }
+
+    .likeBox {
+        width: 90vw;
+        border-bottom: 1px solid black;
+    }
+
+    .myLikeData {
+        width: 225vw;
+        font-size: 3vw;
+        margin: 1.5em 4em 0.2em 0.5em;
+    }
+
+    .mydata_likeDate {
+        margin-top: 0;
+        width: 90vw;
+        font-size: 3vw;
+        margin: 1.4em 0 0 0;
+    }
+
+    .reviewBox {
+        height: 5vh;
+        width: 90vw;
+        border-bottom: 1px solid black;
+    }
+
+    .myReviewData {
+        width: 70vw;
+        font-size: 3vw;
+        margin: 1.8em 4em 0.2em 0.5em;
+    }
+
+    .mydata_reviewDate {
+        margin-top: 1vh;
+        width: 18vw;
+        font-size: 3vw;
+    }
+    .empty_reviewbox {
+        padding-right: 5vw;
+        width: 100%;
+        text-align: center;
+        font-size: 6vw;
+    }
+    .empty_likesbox {
+        padding-right: 5vw;
+        width: 100%;
+        text-align: center;
+        font-size: 4.8vw;
+    }
+}

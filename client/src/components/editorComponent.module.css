@@ -1,0 +1,26 @@
+.container{
+    height: 19rem;
+}
+.box{
+    height: 15rem;
+    width: 37rem;
+}
+@media screen and (max-width:1024px) {
+.container{
+    height: 19rem;
+}
+.box{
+    height: 13rem;
+    width: 30rem;
+}
+}
+
+@media screen and (max-width:740px) {
+.container{
+    height: 22rem;
+}
+.box{
+    height: 16rem;
+    width: 18rem;
+}
+}
