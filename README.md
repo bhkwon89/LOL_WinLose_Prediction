@@ -7,4 +7,5 @@ lol 캐릭터 선택창에서 얻을 수 있는 정보를 이용하여 승패를
 3. 상대승률과 아군 티어를 XGboost로 이진분류(승,패)
 
 ## link
-http://lolwinloseprediction.herokuapp.com/
+https://www.youtube.com/watch?v=GmLMWl7wDyE
+
